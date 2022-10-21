@@ -209,10 +209,92 @@ header i {
     color: var(--hueso);
 }
 
+/* marcas */
+
+#marcas {
+    padding-top: 50px;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 450px;
+    max-width: 1400px;
+    margin: auto;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marcas__h3 {
+    font-size: 45px;
+    font-weight: 300;
+    color: var(--hueso-osc);
+    padding-bottom: 30px;
+    letter-spacing: 7px;
+}
 
 
+.marcas__card-contenedor {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    background: var(--bg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.marcas__card-contenedor img {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+}
 
+/* ----------------------------------------------- ABOUT US */
 
+/* ----------------------------------------------- TENDENCIAS */
 
+#tendencias {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    height: 450px;
+    position: relative;
+    z-index: 100;
+    background: var(--bg);
+}
 
+.tendencias__titulo {
+    margin-top: 40px;
+    font-size: 50px;
+
+}
+
+.card-zapas__contenedor {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.card-zapas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-zapas__img {
+    position: relative;
+    z-index: 1000;
+    max-width: 200px;
+    border-radius: 4px;
+
+}

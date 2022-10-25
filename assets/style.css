@@ -9,7 +9,7 @@
 
 :root {
     --bg: #0F1011;
-    --bg2: #4C4C46; 
+    --bg2: rgba(27, 28, 30, .9); 
     --hueso: #F1F1CF;
     --hueso-osc: #e6e6a8;
     --perla: #E3E5D2;
@@ -322,6 +322,118 @@ header i {
 
 /* ----------------------------------------------- TENDENCIAS */
 
+/* ----------------------------------------------- CONTACTO */
+
+.contacto {
+    margin-top: 200px;
+    background-color: var(--bg);
+    width: 100%;
+    max-width: 1400px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    z-index: 100;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.contacto__h3 {
+    font-size: 38px;
+    font-weight: 300;
+    color: var(--beish);
+}
+
+.contactos__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contacto1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.contacto1__items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto1__items__h3 {
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--hueso-osc);
+}
+
+.contact1__items__info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contact1__items__info i {
+    font-size: 18px;
+}
+
+.contacto1__social i {
+    font-size: 35px;
+    color: #fff;
+}
+
+.contact2 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact2__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.contact2__form input {
+    padding: 5px 9px;
+    border-radius: 5px;
+    width: 300px;
+    height: 36px;
+    border: none;
+    outline: none;
+    background: var(--bg);
+    outline: 1px solid rgba(255, 255, 255, .1);
+    font-size: 15px;
+    color: #fff;
+}
+
+.contact2__form input::placeholder {
+    color: rgba(255, 255, 255, .7);
+}
+
+.contact2__form input:last-child {
+    width: 100px;
+    align-self: center;
+    background: #000;
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* agregar hover al boton */
+
 /* ----------------------------------------------- FOOTER */
 
 .footer {
@@ -332,8 +444,7 @@ header i {
     height: 400px;
     background-color: var(--bg);
     margin: auto;
-    margin-top: 200px;
-    padding:40px;
+    padding: 40px;
 }
 
 .info__links {

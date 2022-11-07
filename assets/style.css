@@ -36,6 +36,10 @@ body {
     width: 100%;
 }
 
+body {
+    background-color: var(--bg);
+}
+
 /* ----------------------------------------------- HEADER */
 
 header {
@@ -309,6 +313,7 @@ header i {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
     max-width: 1400px;
     gap: 10px;
@@ -321,13 +326,15 @@ header i {
     font-size: 40px;
     color: var(--hueso);
     font-weight: 300;
+    padding-top: 40px;
 }
 
 .card-zapas__contenedor {
     width: 80%;
-    height: 100%;
+    height: 10%;
     display: flex;
     align-items: center;
+    gap: 5px;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -339,8 +346,8 @@ header i {
     align-items: center;
     justify-content: space-around;
     min-height: 65%;
-    width: 210px;h
-    height: 65%;
+    width: 210px;
+    height: 270px;
     border: 1px solid #000;
     border-radius: 5px;
     padding: 5px;
@@ -363,6 +370,7 @@ header i {
 .card-zapas__p {
     color: #000;
     font-weight: 700;
+    line-height: 15px;
 }
 
 .card-zapas__p-cuotas {
@@ -372,7 +380,10 @@ header i {
 .card-zapas__p-envio {
     background-color: var(--naranja);
     padding: 2px;
-    width: 100px;
+    width: 80px;
+    font-size: 13px;
+    position: absolute;
+    align-self: flex-end;
 }
 
 .card-zapas__span {
@@ -382,14 +393,36 @@ header i {
 
 .card-zapas__img {
     width: 150px;
+    position: relative;
+    margin-top: 20px;
 }
 
+.card-zapas__front {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-zapas__btn {
+    width: 75%;
+    height: 26px;
+    border: none;
+    background-color: #6AB234;
+    color: #fff;
+    padding: 4px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.card-zapas__btn:hover {
+    background-color: #3DB234;
+    scale: 1.1;
+}
 
 /* ----------------------------------------------- CLÁSICOS */
 
-/* ----------------------------------------------- OUTLET */
+/* ----------------------------------------------- NEWIN */
 
-#outlet {
+#newin {
     position: relative;
     z-index: 100;
     display: flex;
@@ -397,23 +430,53 @@ header i {
     align-items: center;
     width: 100%;
     max-width: 1400px;
-    height: 700px;
+    height: 100%;
     background: var(--bg);
+    padding-bottom: 50px;
 }
 
-.outlet__titulo {
-    margin-top: 20px;
+.newin__titulo {
+    padding-top: 60px;
+    margin-bottom: 10px;
     font-size: 40px;
     color: var(--hueso);
     font-weight: 300;
     
 }
 
-/* ----------------------------------------------- OUTLET */
+/* ----------------------------------------------- NEWIN */
+
+/* ----------------------------------------------- SALE */
+
+
+#sale {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    background: var(--bg);
+    padding-bottom: 50px;
+}
+
+.sale__titulo {
+    padding-top: 60px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: var(--hueso);
+    font-weight: 300;
+    
+}
+
+/* ----------------------------------------------- SALE */
 
 /* ----------------------------------------------- CONTACTO */
 
 .contacto {
+    padding: 0 40px;
     position: relative;
     z-index: 100;
     margin-top: 200px;

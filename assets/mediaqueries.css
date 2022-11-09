@@ -6,6 +6,9 @@
         height: 55px;
         font-size: 16px;
     }
+    .nav__list {
+        grid-template-rows: 25px;
+    }
     .nav__list-item {
         font-size: 16px;
         font-weight: 500;
@@ -35,13 +38,24 @@
     .about-us h3 {
         display: none;
     }
+    .productos__h3 {
+        font-size: 35px;
+    }
+    .card-zapas__contenedor {
+        width: 100%;
+    }
     .packs__contenedor {
         flex-direction: column;
         width: 90%;
     }
     .packs__contenedor-info {
-        width: 90%;
+        width: 85%;
     }
+    .packs__contenedor-imgs {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+     }
     .packs__contenedor-ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -58,5 +72,120 @@
     }
     .p-c-info2 {
         order: 1;
+    }
+    .contacto__h3 {
+        font-size: 34px;
+    }
+    .contacto1__items__h3 {
+        font-size: 24px;
+    }
+    .contact1__items__info {
+        font-size: 15px;
+    }
+    .contact1__items__info i {
+        font-size: 15px;
+    }
+    .contacto1__social i {
+        font-size: 25px;
+    }
+    .contact2__form__input {
+        height: 29px;
+    }
+    .info__links {
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 40px);
+    }
+    .info__links-item a {
+        display: none;
+    }
+    .info__links-item-form {
+        justify-content: center;      
+    }
+}
+
+@media (max-width: 576px) {
+    .header__item1-log {
+        display: none;
+    }
+    .header__item1-icons {
+        width: 60px;
+    }
+    .nav {
+        display: none;
+    }
+    .header__item1-img {
+        width: 80px;
+    }
+    #main {
+        top: 70px;
+        margin-bottom: 130px;
+    }
+    .main__info__h1 {
+        font-size: 34px;
+        padding-top: unset;
+    }
+    .about-us {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .about-us p {
+        width: 100%;
+        text-align: center;
+    }
+    .us__redes {
+        flex-direction: row;
+        gap: 5px;
+    }
+    #productos {
+        display: none;
+    }
+    .card-zapas__contenedor {
+        gap: 3px;
+    }
+    .card-zapas {
+        min-height: unset;
+    }
+    #packs {
+        background-color: var(--bg);
+    }
+    .packs__titulo {
+        color: var(--beish);
+    }
+    .packs__contenedor {
+        width: 90%;
+    }
+    .packs__contenedor-info {
+        width: 100%;
+    }
+    .packs__contenedor-imgs {
+        width: 400px;
+    }
+    .packs__img {
+        max-width: 180px;
+        width: 140px;
+    }
+    .contactos__contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto1 {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .contacto2 {
+        width: 100%;
+    }
+    .contacto1__items__h3 {
+        margin: auto;
+    }
+    .contact2__form__input {
+        align-items: center;
+        width: 100%;
+    }
+    .contact2__form__input:last-child {
+        align-self: center;
     }
 }

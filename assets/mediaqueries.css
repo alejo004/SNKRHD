@@ -141,10 +141,16 @@
         display: none;
     }
     .card-zapas__contenedor {
-        gap: 3px;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 160px));
     }
     .card-zapas {
         min-height: unset;
+    }
+    .card-zapas__img {
+        max-width: 90%;
+    }
+    .card-zapas__btn {
+        width: 100%;
     }
     #packs {
         background-color: var(--bg);
@@ -153,17 +159,17 @@
         color: var(--beish);
     }
     .packs__contenedor {
-        width: 90%;
+        width: 100%;
     }
     .packs__contenedor-info {
         width: 100%;
     }
     .packs__contenedor-imgs {
-        width: 400px;
+        width: 100%;
     }
     .packs__img {
-        max-width: 180px;
-        width: 140px;
+        width: 100px;
+        column-gap: unset;
     }
     .contactos__contenedor {
         flex-direction: column;

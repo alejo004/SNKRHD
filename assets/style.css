@@ -320,11 +320,11 @@ main i {
     width: 90%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 210px);
-    grid-template-rows: repeat(auto-fill, 270px);
+    grid-template-columns: repeat(auto-fill, minmax(210px, 270px));
+    grid-template-rows: repeat(auto-fill, 280px);
     align-items: center;
     justify-content: center;
-    gap: 15px; 
+    gap: 5px; 
 }
 
 .card-zapas {
@@ -334,7 +334,6 @@ main i {
     align-items: center;
     justify-content: space-around;
     min-height: 65%;
-    max-width: 210px;
     height: 270px;
     border: 1px solid #000;
     border-radius: 5px;

@@ -47,6 +47,7 @@
     .packs__contenedor {
         flex-direction: column;
         width: 90%;
+        padding: 20px 40px;
     }
     .packs__contenedor-info {
         width: 85%;
@@ -57,15 +58,12 @@
         width: 100%;
      }
     .packs__contenedor-ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        column-gap: 10px;
-        row-gap: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
     }
     .packs__contenedor-imgs {
-        justify-content: center;
+        display: none;
     }
     .p-c-img2 {
         order: 2;
@@ -150,27 +148,43 @@
         max-width: 90%;
     }
     .card-zapas__btn {
-        width: 100%;
+        width: 95%;
     }
+
+    /* PACKS */
+
     #packs {
         background-color: var(--bg);
+        gap: 10px;
     }
     .packs__titulo {
         color: var(--beish);
     }
     .packs__contenedor {
         width: 100%;
+        gap: 0;
+        background-color: var(--hueso);
     }
     .packs__contenedor-info {
         width: 100%;
     }
     .packs__contenedor-imgs {
-        width: 100%;
+        display: none;
+    }
+    .packs__contenedor-img-responsive {
+        display: block;
+    }
+    .img-r {
+        order: 3;
     }
     .packs__img {
+        max-width: 130px;
         width: 100px;
         column-gap: unset;
     }
+
+    /* CONTACTO */
+
     .contactos__contenedor {
         flex-direction: column;
         align-items: center;

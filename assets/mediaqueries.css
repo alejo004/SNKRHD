@@ -83,16 +83,11 @@
     .contacto-form-contenedor {
         width: 80%;
     }
-    .info__links {
-        text-align: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 40px);
+    .responsive__footer {
+        display: flex;
     }
-    .info__links-item a {
+    .footer {
         display: none;
-    }
-    .info__links-item-form {
-        justify-content: center;      
     }
 }
 
@@ -196,5 +191,10 @@
     }
     .contacto-form-contenedor {
         align-items: center;
+    }
+    .responsive__footer__ul {
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 8px;
     }
 } 

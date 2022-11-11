@@ -636,6 +636,7 @@ main i {
 }
 
 .contacto-form-contenedor textarea {
+    color: #fff;
     padding: 5px;
     outline: none;
     background: inherit;
@@ -654,6 +655,51 @@ main i {
 }
 
 /* ----------------------------------------------- CONTACTO */
+
+/* ----------------------------------------------- FOOTER */
+
+.responsive__footer {
+    padding: 40px 0;
+    display: none;
+    position: relative;
+    z-index: 100;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.contenedor-responsive__footer {
+    font-size: 15px;
+    font-weight: 200;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #aaa;
+    text-align: center;
+}
+
+.responsive__footer img {
+    width: 100px;
+}
+
+.responsive__footer__ul {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------------------- FOOTER */
 
 /* ----------------------------------------------- FOOTER */
 

@@ -451,8 +451,8 @@ main i {
     align-items: center;
     width: 100%;
     max-width: 1400px;
+    background: var(--bg);
     height: 100%;
-    background: var(--hueso);
     padding-bottom: 20px;
     margin: auto;
 }
@@ -461,12 +461,12 @@ main i {
     padding-top: 30px;
     margin-bottom: 10px;
     font-size: 40px;
-    color: #000;
+    color: #fff;
     font-weight: 300;
 }
 
 .packs__contenedor {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -567,7 +567,7 @@ main i {
 #contacto {
     position: relative;
     z-index: 100;
-    background: var(--bg3);
+    background: var(--bg);
     margin: auto;
     width: 100%;
     max-width: 1400px;
@@ -658,9 +658,10 @@ main i {
 
 /* ----------------------------------------------- FOOTER */
 
-.responsive__footer {
+.footer {
+    background: #101010;
     padding: 40px 0;
-    display: none;
+    display: flex;
     position: relative;
     z-index: 100;
     margin: auto;
@@ -670,7 +671,7 @@ main i {
     height: 100%;
 }
 
-.contenedor-responsive__footer {
+.footer__contenedor {
     font-size: 15px;
     font-weight: 200;
     width: 100%;
@@ -683,78 +684,18 @@ main i {
     text-align: center;
 }
 
-.responsive__footer img {
+.footer img {
     width: 100px;
 }
 
-.responsive__footer__ul {
+.footer__ul {
     display: flex;
     gap: 20px;
 }
 
-
-
-
-
-
-
-
-/* ----------------------------------------------- FOOTER */
-
-/* ----------------------------------------------- FOOTER */
-
-.footer {
-    position: relative;
-    z-index: 100;
-    width: 100%;
-    max-width: 1400px;
-    height: 400px;
-    background-color: var(--bg);
-    margin: auto;
-    padding: 40px;
+.footer__ul li {
+    cursor: pointer;
 }
 
-.info__links {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.info__links-item {
-    display: grid;
-    grid-template-rows: 60px repeat(5, 40px);
-}
-
-.info__links-item h3 {
-    color: var(--beish);
-    font-weight: 700;
-}
-
-.info__links-item a {
-    color: rgba(255, 255, 255, .6)
-}
-
-.info__links-item-form {
-    display: flex;
-    align-items: center;
-}
-
-.info__links-item input {
-    width: 200px;
-    height: 31px;
-    padding: 5px 7px;
-    border-radius: 10px 0 0 10px;
-    outline: none;
-    border: none;
-}
-
-.info__links-item button {
-    border-radius: 0 10px 10px 0;
-    height: 31px;   
-    padding: 5px 7px;
-    border: none;
-    outline: none;
-    background: var(--beish);
-    cursor: pointer;    
-}
 
 /* ----------------------------------------------- FOOTER */

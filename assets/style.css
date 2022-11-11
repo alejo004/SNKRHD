@@ -25,39 +25,82 @@
     --celeste: #076FF5;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--bg);
     background-image: url(assets/img/brand6.png);
 }
 
+
 /* ----------------------------------------------- HEADER */
 
-html {
-    scroll-behavior: smooth;
+.header {
+    width: 100%;
+    margin: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: #000;
+}
+
+.header img {
+    width: 100px;
 }
 
 .nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav__item {
+    color: var(--beish);
+}
+
+.log {
+    background-color: var(--hueso-osc);
+    color: #000;
+    padding: 7px 3px;
+    border-radius: 4px;
+}
+
+.reg {
+    border: 1px solid var(--hueso);
+    padding: 7px 3px;
+    border-radius: 4px;
+}
+
+
+/* NAV RESPONSIVE  */
+
+.nav__responsive {
     padding: 0 40px;
     height: 70px;
     background-color: #000;
     color: #000;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
 }
 
-.nav i {
+.nav__responsive i {
     color: var(--beish);
 }
 
 .nav__links {
     position: fixed;
-    left: 0;
+    left: 5%;
     bottom: 0;
     top: 70px;
-    right: 0;
-    background-color: var(--bg);
+    right: 5%;
+    width: 90%;
+    background-color: var(--bg3);
     display: grid;
     place-items: center;
     clip-path: circle(0% at top left);
@@ -68,7 +111,7 @@ html {
     color: #fff;
 }
 
-.nav img {
+.nav__responsive img {
     width: 100px;
 }
 
@@ -590,6 +633,7 @@ main i {
 
 .contacto-form-contenedor input:last-child {
     width: 100px;
+    cursor: pointer;
 }
 
 .contacto-form-contenedor input:last-child:active {

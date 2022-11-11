@@ -9,7 +9,8 @@
 
 :root {
     --bg: #0F1011;
-    --bg2: rgba(27, 28, 30, .9); 
+    --bg2: rgba(27, 28, 30, .9);
+    --bg3: rgb(27, 28, 30);
     --hueso: #F1F1CF;
     --hueso-osc: #e6e6a8;
     --perla: #E3E5D2;
@@ -497,6 +498,11 @@ main i {
     font-weight: 300;
 }
 
+.packs__contenedor-ul span {
+    font-style: italic;
+}
+
+
 .packs__contenedor-imgs {
     width: 100%;
     display: grid;
@@ -558,119 +564,94 @@ main i {
 
 /* ----------------------------------------------- CONTACTO */
 
-.contacto {
-    padding: 0 40px;
+#contacto {
     position: relative;
     z-index: 100;
-    margin-top: 200px;
-    background-color: var(--bg);
+    background: var(--bg3);
+    margin: auto;
     width: 100%;
     max-width: 1400px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 20px;
-    margin: auto;
-}
-
-.contacto__h3 {
-    font-size: 38px;
-    font-weight: 300;
-    color: var(--beish);
-}
-
-.contactos__contenedor {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    width: 100%;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
 }
 
-.contacto1 {
-    width: 40%;
+.contenedor__contacto-info {
+    background: var(--hueso);
+    padding: 30px;
+    width: 50%;
+}
+
+.contacto-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    padding-top: 50px;
+    justify-content: space-around;
+    gap: 10px;
 }
 
-.contacto1__items {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.contacto-info__title {
+    font-size: 23px;
+    font-weight: 700;
 }
 
-.contacto1__items__h3 {
-    font-size: 26px;
+.contacto-info__p {
+    width: 80%;
     font-weight: 300;
-    color: var(--hueso-osc);
 }
 
-.contact1__items__info {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    color: #fff;
+.contacto-info__ul {
     font-size: 16px;
     font-weight: 300;
 }
 
-.contact1__items__info i {
+.contacto-info__ul li:nth-child(1) {
     font-size: 18px;
+    font-weight: 400;
 }
 
-.contacto1__social i {
-    font-size: 35px;
-    color: #fff;
-}
-
-.contact2 {
-    max-width: 300px;
-    width: 40%;
+.contacto-form {
+    width: 50%;
     display: flex;
-    align-items: flex-end;
-    flex-direction: column;
+    justify-content: center;
 }
 
-.contact2__form {
+.contacto-form-contenedor {
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin-top: 20px;
+    align-items: flex-start;
+    justify-content: center;
     gap: 10px;
 }
 
-.contact2__form__input {
-    padding: 5px 9px;
-    border-radius: 5px;
-    max-width: 300px;
+.contacto-form-contenedor input {
     width: 100%;
-    height: 36px;
-    border: none;
+    padding: 6px;
+    background-color: inherit;
+    border: 1px solid var(--hueso);
+    color: #fff;
     outline: none;
-    background: var(--bg);
-    outline: 1px solid rgba(255, 255, 255, .1);
-    font-size: 15px;
-    color: #fff;
 }
 
-.contact2__form__input::placeholder {
-    color: rgba(255, 255, 255, .7);
+.contacto-form-contenedor textarea {
+    padding: 5px;
+    outline: none;
+    background: inherit;
+    border: 1px solid var(--hueso);
+    width: 100%;
+    height: 80px;
 }
 
-.contact2__form__input:last-child {
+.contacto-form-contenedor input:last-child {
     width: 100px;
-    align-self: center;
-    background: #000;
-    font-weight: 300;
-    font-size: 15px;
-    color: #fff;
-    align-self: end;
 }
 
-/* agregar hover al boton */
+.contacto-form-contenedor input:last-child:active {
+    background-color: var(--hueso-osc);
+    color: #000;
+}
 
 /* ----------------------------------------------- CONTACTO */
 

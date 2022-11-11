@@ -28,103 +28,60 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--bg);
-}
-
-/* img-fondo */
-
-.img-bg {
-    position: fixed;
-    width: 100%;
+    background-image: url(assets/img/brand6.png);
 }
 
 /* ----------------------------------------------- HEADER */
 
-header {
-    position: relative;
-    z-index: 1000;
-    background-color: #000;
-    top: 0;
-    width: 100%;
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    padding: 0 40px;
     height: 70px;
+    background-color: #000;
+    color: #000;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 30px;
-    font-weight: 400;
-}
-
-.header__item1 {
-    top: 0;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 50px;
 }
 
-.header__item1-img {
+.nav i {
+    color: var(--beish);
+}
+
+.nav__links {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 70px;
+    right: 0;
+    background-color: var(--bg);
+    display: grid;
+    place-items: center;
+    clip-path: circle(0% at top left);
+    transition: clip-path .4s;
+}
+
+.nav__link {
+    color: #fff;
+}
+
+.nav img {
     width: 100px;
-    box-shadow: 0 0 30px #000;
 }
 
-.header__item1-icons {
-    display: flex;
-    width: 250px;
-    height: 40px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-header i {
-    font-size: 18px;
-    color: var(--hueso-osc);
-    cursor: pointer;
-}
-
-.header__item1-log a {
-    color: var(--hueso-osc);
-}
-
-.header__item1-log a:nth-child(2) {
-    background-color: var(--bg2);
-    color: var(--hueso);
-    padding: 7px;
-    border-radius: 5px;
-    margin: 5px;
+.nav__links:target {
+    clip-path: circle(150% at top left);
 }
 
 
 /* ----------------------------------------------- NAV */
-.nav {
-    position: relative;
-    z-index: 1200;
-    background-color: var(--hueso-osc);
-    position: sticky;
-    top: 0;
-}
-
-.nav__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30px;
-    justify-content: space-around;
-    justify-items: center;
-    align-items: center;
-}
-
-.nav__list-item {
-    color: #000;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-/* estilar a */
 
 /* ----------------------------------------------- MAIN */
 
 #main {
-    position: relative;
-    z-index: 100;
     max-width: 1400px;
     width: 100%;
     height: 80vh;
@@ -175,14 +132,11 @@ main i {
 /* ----------------------------------------------- ABOUT US */
 
 #about-us {
-    position: relative;
-    z-index: 100;
     max-width: 1400px;
     width: 100%;
     background-color: var(--bg);
     height: 40vh;
-    margin: auto;  
-    margin-top: 100vh;
+    margin: auto;
 }
 
 .about-us {
@@ -230,8 +184,6 @@ main i {
 /* ----------------------------------------------- PRODUCTOS */
 
 #productos {
-    position: relative;
-    z-index: 100;
     width: 100%;
     max-width: 1400px;
     margin: auto;
@@ -294,8 +246,6 @@ main i {
 /* ----------------------------------------------- CLÁSICOS */
 
 #clasicos {
-    position: relative;
-    z-index: 100;
     margin-top: 300px;
     display: flex;
     flex-direction: column;
@@ -417,8 +367,6 @@ main i {
 /* ----------------------------------------------- NEWIN */
 
 #newin {
-    position: relative;
-    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -444,8 +392,6 @@ main i {
 /* ----------------------------------------------- PACKS */
 
 #packs {
-    position: relative;
-    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,6 +436,7 @@ main i {
 .packs__contenedor-h4 {
     font-size: 20px;
     font-weight: 400;
+    text-align: center;
 }
 
 .packs__contenedor-ul {
@@ -539,8 +486,6 @@ main i {
 
 
 #sale {
-    position: relative;
-    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -565,9 +510,7 @@ main i {
 /* ----------------------------------------------- CONTACTO */
 
 #contacto {
-    position: relative;
-    z-index: 100;
-    background: var(--bg);
+    background: var(--gris-osc);
     margin: auto;
     width: 100%;
     max-width: 1400px;
@@ -662,8 +605,6 @@ main i {
     background: #101010;
     padding: 40px 0;
     display: flex;
-    position: relative;
-    z-index: 100;
     margin: auto;
     width: 100%;
     align-items: center;

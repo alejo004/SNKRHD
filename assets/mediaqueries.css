@@ -1,17 +1,6 @@
 @media (max-width: 992px) {
-    .img-bg {
-        display: none;
-    }
-    .header__item1 {
-        height: 55px;
-        font-size: 16px;
-    }
-    .nav__list {
-        grid-template-rows: 25px;
-    }
-    .nav__list-item {
-        font-size: 16px;
-        font-weight: 500;
+    .nav__item {
+        font-size: 14px;
     }
     #main {
         height: 50vh;
@@ -103,11 +92,11 @@
     }
     #main {
         top: 70px;
-        margin-bottom: 130px;
+        margin-bottom: 100px;
     }
     .main__info__h1 {
+        padding-top: 40px;
         font-size: 34px;
-        padding-top: unset;
     }
     .about-us {
         flex-direction: column;

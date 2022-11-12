@@ -1,4 +1,33 @@
-@media (max-width:576px) {
-    
+
+@media (max-width: 992px) {
+    .signup__bienvenido__p {
+        text-align: center;
+    }
+    .signup__info {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .signup {
+        flex-direction: column;
+    }
+    .signup__cont__bienvenido {
+        height: 20vh;
+        width: 100%;
+    }
+    .signup__cont__info {
+        height: 80vh;
+        width: 100%;
+    }
+    .signup__info {
+        width: 100%;
+    }
+    .signup__info__h1 {
+        font-size: 35px;
+    }
+    .form__cont {
+        width: 90%;
     }
 }

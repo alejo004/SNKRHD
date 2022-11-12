@@ -91,12 +91,12 @@
         display: flex;
     }
     #main {
-        top: 70px;
-        margin-bottom: 100px;
+        height: calc(100vh - 90px);
+        justify-content: space-around;
     }
     .main__info__h1 {
         padding-top: 40px;
-        font-size: 34px;
+        font-size: 40px;
     }
     .about-us {
         flex-direction: column;
@@ -115,7 +115,8 @@
         display: none;
     }
     .card-zapas__contenedor {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 160px));
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
     }
     .card-zapas {
         min-height: unset;

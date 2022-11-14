@@ -27,7 +27,7 @@
 }
 
 body {
-    background-image: url(../assets/img/pattern2.png);
+    background-image: url(../assets/img/brand5.gif);
     background-position: center;
     font-family: "Noto Sans";
     overflow: hidden;
@@ -46,9 +46,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45%;
+    width: 50%;
     height: 100vh;
-    background: var(--bg2);
+    background: rgba(27, 28, 30, .3);
 }
 
 .signup__bienvenido {
@@ -79,7 +79,7 @@ body {
      /* 2NDO CONTENEDOR */
 
 .signup__cont__info {
-    width: 55%;
+    width: 50%;
     background-color: var(--hueso);
     height: 100vh;
     display: flex;

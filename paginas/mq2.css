@@ -10,12 +10,16 @@
 
 
 @media (max-width: 576px) {
+    body {
+        background-image: none;
+    }
     .signup {
         flex-direction: column;
     }
     .signup__cont__bienvenido {
         height: 20vh;
         width: 100%;
+        background: var(--bg);
     }
     .signup__cont__info {
         height: 80vh;

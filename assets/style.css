@@ -30,16 +30,22 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Noto Sans', sans-serif;
-    background-color: var(--bg);
-    background-image: url(assets/img/brand6.png);
+.img-bg {
+    position: fixed;
 }
+
+body { 
+    /* background-image: url(../assets/img/brand7.gif); */
+    /* background-position: center; */
+    font-family: "Noto Sans";
+} 
 
 
 /* ----------------------------------------------- HEADER */
 
 .header {
+    position: fixed;
+    z-index: 200;
     width: 100%;
     margin: auto;
     height: 70px;
@@ -80,6 +86,8 @@ body {
 /* NAV RESPONSIVE  */
 
 .nav__responsive {
+    position: relative;
+    z-index: 100;
     padding: 0 40px;
     height: 70px;
     background-color: #000;
@@ -125,6 +133,8 @@ body {
 /* ----------------------------------------------- MAIN */
 
 #main {
+    position: relative;
+    z-index: 100;
     max-width: 1400px;
     width: 100%;
     height: 80vh;
@@ -133,6 +143,8 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 100vh;
 }
 
 .info_contenedor {
@@ -175,6 +187,8 @@ main i {
 /* ----------------------------------------------- ABOUT US */
 
 #about-us {
+    position: relative;
+    z-index: 100;
     max-width: 1400px;
     width: 100%;
     background-color: var(--bg);
@@ -227,6 +241,8 @@ main i {
 /* ----------------------------------------------- PRODUCTOS */
 
 #productos {
+    position: relative;
+    z-index: 100;
     width: 100%;
     max-width: 1400px;
     margin: auto;
@@ -289,7 +305,8 @@ main i {
 /* ----------------------------------------------- CLÁSICOS */
 
 #clasicos {
-    margin-top: 300px;
+    position: relative;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -410,6 +427,8 @@ main i {
 /* ----------------------------------------------- NEWIN */
 
 #newin {
+    position: relative;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -435,6 +454,8 @@ main i {
 /* ----------------------------------------------- PACKS */
 
 #packs {
+    position: relative;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -529,6 +550,8 @@ main i {
 
 
 #sale {
+    position: relative;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -553,6 +576,8 @@ main i {
 /* ----------------------------------------------- CONTACTO */
 
 #contacto {
+    position: relative;
+    z-index: 100;
     background: var(--gris-osc);
     margin: auto;
     width: 100%;
@@ -646,6 +671,8 @@ main i {
 /* ----------------------------------------------- FOOTER */
 
 .footer {
+    position: relative;
+    z-index: 100;
     background: #101010;
     padding: 40px 0;
     display: flex;

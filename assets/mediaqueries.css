@@ -30,15 +30,6 @@
         font-size: 40px;
         padding-top: 50px;
     }
-    #about-us {
-        margin-top: unset;
-    }
-    .about-us {
-        width: 90%;
-    }
-    .about-us h3 {
-        display: none;
-    }
     .productos__h3 {
         font-size: 35px;
     }
@@ -122,19 +113,6 @@
     .main__info__h1 {
         padding-top: 40px;
         font-size: 40px;
-    }
-    .about-us {
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap: 0;
-    }
-    .about-us p {
-        width: 100%;
-        text-align: center;
-    }
-    .us__redes {
-        flex-direction: row;
-        gap: 5px;
     }
     #productos {
         display: none;

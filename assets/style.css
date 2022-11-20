@@ -93,7 +93,7 @@ body {
     z-index: 100;
     padding: 0 40px;
     height: 70px;
-    background-color: #000;
+    background: linear-gradient(to bottom, var(--bg), #000);
     color: #000;
     display: none;
     align-items: center;
@@ -110,7 +110,8 @@ body {
     bottom: 0;
     top: 70px;
     width: 30%;
-    background-color: var(--bg3);
+    height: 70vh;
+    background: linear-gradient(to right, var(--hueso), var(--hueso-osc));
     display: grid;
     place-items: center;
     clip-path: circle(0% at top right);
@@ -118,7 +119,7 @@ body {
 }
 
 .nav__link {
-    color: #fff;
+    color: #000;
 }
 
 .nav__responsive img {
@@ -202,42 +203,34 @@ main i {
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    background-color: var(--bg);
-    height: 300px;
+    background-color: var(--bg3);
+    height: 100%;
     padding-bottom: 10px;
-}
-
-.about__h3 {
-    font-size: 40px;
-    color: var(--beish);
 }
 
 .beneficios__contenedor {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     height: 80%;
+    flex-wrap: wrap;
 }
 
 .beneficios__cards {
-    width: 30%;
-    height: 80%;
+    width: 300px;
+    height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 15px;
-    background-color: var(--hueso);
     padding: 15px;
     text-align: center;
     transition: all .4s;
-}
-
-.beneficios__cards:hover {
-    scale: 1.05;
-    background-color: var(--bg);
+    background-color: var(--bg3);
     color: var(--beish);
+    margin: auto;
 }
 
 .beneficios__cards i {
@@ -257,7 +250,8 @@ main i {
 
 /* ----------------------------------------------- PRODUCTOS */
 
-#scaloni {
+#productos {
+    padding-top: 20px;
     position: relative;
     z-index: 200;
     display: flex;
@@ -266,11 +260,19 @@ main i {
     align-items: center;
     width: 100%;
     max-width: 1400px;
-    height: 300px;
+    height: 100%;
     background-color: var(--bg);
+    margin: auto;
+    gap: 20px;
 }
 
-.scaloneta__contenedor {
+.productos__h3 {
+    font-size: 40px;
+    color: var(--hueso);
+    font-weight: 300;
+}
+
+.productos__contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,19 +282,44 @@ main i {
     padding: 0 20px;
 }
 
-.scaloneta__card {
-    padding: 10px;
-    width: 80%;
-    height: 60%;
+.productos__card {
+    padding: 6px;
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    gap: px;
     background-color: var(--hueso);
+    transition: .4s;
 }
 
-.scaloneta__card__a {
+.productos__card:hover {
+    scale: 1.05;
+    background-color: var(--hueso-osc);
+    color: var(--beish);
+}
+
+.producto__card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.producto__span {
+    font-size: 23px;
+    color: #000;
+}
+
+.producto__card__p {
+    color: #000;
+    font-weight: 300;
+}
+
+
+.producto__card__a {
     color: #000;
     font-size: 20px;
     font-weight: 600;
@@ -317,7 +344,7 @@ main i {
     margin: auto;
 }
 
-.clasicos__titulo {
+.clasicos__h3{
     margin-top: 20px;
     font-size: 40px;
     color: var(--hueso);

@@ -14,7 +14,7 @@
     }
     #main {
         top: 0px;
-        height: 50vh;
+        height: 70vh;
         justify-content: center;
         gap: 20px;
         margin-bottom: unset;
@@ -27,11 +27,17 @@
         padding-bottom: unset;
     }
     .main__info__h1 {
-        font-size: 40px;
+        font-size: 36px;
         padding-top: 50px;
     }
-    .productos__h3 {
-        font-size: 35px;
+    .main__info__h1 span {
+        font-size: 50px;
+    }
+    #productos {
+        display: none;
+    }
+    .clasicos__h3 {
+        padding-top: 0;
     }
     .card-zapas__contenedor {
         width: 100%;
@@ -105,6 +111,9 @@
 }
 
 @media (max-width: 576px) {
+    .nav__links {
+        width: 50%;
+    }
     #main {
         top: 0;
         height: calc(100vh - 90px);
@@ -139,11 +148,13 @@
     }
     .packs__titulo {
         color: var(--beish);
+        font-size: 37px;
     }
     .packs__contenedor {
         width: 100%;
         gap: 0;
         background-color: var(--hueso);
+        padding: 0;
     }
     .packs__contenedor-info {
         width: 100%;

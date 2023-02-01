@@ -12,46 +12,27 @@
 </head>
 <body>
 
-    <img class="img-bg" src="assets/img/brand7.gif" alt="gif">
-    
-
-    <!-- HEADER -->
-
     <header class="header">
 
-        <img src="assets/img/brand1.png" alt="logo">
+        <img src="assets/img/brand1.png" alt="img-logo" class="logo">
 
-        <nav class="nav__contenedor">
-            <ul class="list">
-                <li class="list__item"><a class="nav__item" href="#about-us">Productos</a></li>
-                <li class="list__item"><a class="nav__item" href="#packs">Colaboraciones</a></li>
-                <li class="list__item"><a class="nav__item log" target="_blank" href="paginas/login.html">Iniciar Sesión</a></li>
-                <li class="list__item"><a class="nav__item log" target="_blank" href="paginas/signup.html">Registrate</a></li>
+        <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <i id="navbar__i" class="fa-solid fa-bars-staggered"></i>
+            </label>
+            <input type="checkbox" id="menu-toggle">
+            <ul class="navbar-list">
+                <li><a class="nav__no-responsive" href="#productos">Productos</a></li>
+                <li><a href="#about">Beneficios</a></li>
+                <li><a href="#clasicos">Clásicos</a></li>
+                <li><a href="#newin">New In</a></li>
+                <li><a href="#packs">Colaboraciones</a></li>
+                <li><a href="#sale">Sale</a></li>
+                <li><a href="paginas/login.html">Inicia sesión</a></li>
+                <li><a href="paginas/signup.html">Regístrate</a></li>
             </ul>
         </nav>
-
     </header>
-
-    <!-- NAV RESPONSIVE -->
-
-    <nav class="nav__responsive">
-
-        <img src="assets/img/brand1.png" alt="logo">
-
-        <a href="#menu" class="nav__target">
-            <i class="fas fa-bars"></i>
-        </a>
-
-        <div class="nav__links" id="menu">
-            <a class="nav__link" href="#clasicos">Clásicos</a>
-            <a class="nav__link" href="#newin">New In</a>
-            <a class="nav__link" href="#packs">Colaboraciones</a>
-            <a class="nav__link" href="#sale">Sale</a>
-            <a class="nav__link" target="_blank" href="paginas/login.html">Iniciar Sesión</a>
-            <a class="nav__link" target="_blank" href="paginas/signup.html">Registrate</a>
-        </div>
-
-    </nav>
 
     <!-- MAIN -->
 
@@ -69,14 +50,14 @@
 
     <!-- ABOUT US -->
 
-    <section class="about">
+    <section id="about">
 
         <div class="beneficios__contenedor">
 
             <div class="beneficios__cards">
                 <i class="fa-solid fa-percent"></i>
-                <h4 class="beneficios__h4">Noobie</h4>
-                <p class="beneficios__p">Utilizando el codigo "Noobie" accedes a un 20% en tu primer compra.</p>
+                <h4 class="beneficios__h4">Starter</h4>
+                <p class="beneficios__p">Utilizando el codigo "Starter" accedes a un 20% en tu primer compra.</p>
             </div>
 
             <div class="beneficios__cards">
@@ -117,7 +98,7 @@
             <a class="productos__card" href="#packs">
                 <div class="producto__card">
                     <span class="producto__span">Colaboraciones</span>
-                    <p class="producto__card__p">¿Has imaginado zapatillas con tematicas? ¿Simpsons? ¿Dragon Ball Z?. Spoiler, Alguien ya lo ha hecho.</p>
+                    <p class="producto__card__p">Las marcas han encontrado en las figuras populares una forma de acercarse a las nuevas audiencias, ¿quieres ver el resultado?</p>
                 </div>
             </a> 
 

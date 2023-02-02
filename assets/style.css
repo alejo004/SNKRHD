@@ -149,6 +149,7 @@ main i {
 /* ----------------------------------------------- ABOUT US */
 
 #about {
+    scroll-margin-top: 60px;
     padding-top: 20px;
     display: flex;
     align-items: center;
@@ -204,6 +205,7 @@ main i {
 /* ----------------------------------------------- PRODUCTOS */
 
 #productos {
+    scroll-margin-top: 60px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -279,6 +281,7 @@ main i {
 /* ----------------------------------------------- CLÁSICOS */
 
 #clasicos {
+    scroll-margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,6 +400,7 @@ main i {
 /* ----------------------------------------------- NEWIN */
 
 #newin {
+    scroll-margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,13 +425,13 @@ main i {
 /* ----------------------------------------------- PACKS */
 
 #packs {
+    scroll-margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     background: var(--bg);
     height: 100%;
-    padding-bottom: 20px;
     margin: auto;
 }
 
@@ -514,6 +518,7 @@ main i {
 
 
 #sale {
+    scroll-margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
